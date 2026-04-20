@@ -1,1 +1,1 @@
-![Lines of Code](lines-of-code.svg)
+![Rich Statistics](rich-statistics.svg)
