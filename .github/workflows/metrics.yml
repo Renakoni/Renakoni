@@ -1,25 +1,31 @@
-name: Metrics
+name: Metrics Lines of Code
 on:
-  # 设置每天凌晨 0 点自动更新一次数据
+  # 每天夜里 0 点更新
   schedule: [{cron: "0 0 * * *"}]
-  # 允许你在页面上手动点击立刻更新
   workflow_dispatch:
 
 jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
-      contents: write # 允许脚本将生成的图片写回你的仓库
+      contents: write
     steps:
       - uses: lowlighter/metrics@latest
         with:
-          # 读取你刚才存好的 Token
           token: ${{ secrets.METRICS_TOKEN }}
           
-          # ---------- 核心显示配置 ----------
-          template: classic
-          # 基础信息模块：展示头部、活动、社区和仓库信息
-          base: header, activity, community, repositories
+          # ---------- 核心设置：隐藏所有默认信息 ----------
+          # 将 base 置为空，这样你的头像、基础提交图等统统不显示！
+          base: "" 
           
-          # ---------- 开启代码行数插件 ----------
+          # ---------- 单独开启并定制代码行数插件 ----------
           plugin_lines: yes
+          # 这里有三个板块可以选择展示：
+          # base: 只显示一个简单的增加/删除行数小条
+          # repositories: 显示你在哪些仓库里写了最多代码的柱状图
+          # history: 显示你按时间维度的代码增减历史折线图
+          # （你可以根据喜好自由删减下面这三个词）
+          plugin_lines_sections: base, repositories, history
+          
+          # 为了防止和别的图表冲突，我们给这张图起个专属的名字
+          filename: lines-of-code.svg
