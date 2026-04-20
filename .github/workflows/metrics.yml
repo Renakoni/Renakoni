@@ -1,6 +1,5 @@
-name: Metrics Lines of Code
+name: Rich Code Statistics
 on:
-  # 每天夜里 0 点更新
   schedule: [{cron: "0 0 * * *"}]
   workflow_dispatch:
 
@@ -14,18 +13,31 @@ jobs:
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           
-          # ---------- 核心设置：隐藏所有默认信息 ----------
-          # 将 base 置为空，这样你的头像、基础提交图等统统不显示！
-          base: "" 
+          # 保留一个最基础的头部（包含你的名字和一点基础排版，让整个图表有边框、不突兀）
+          base: header
           
-          # ---------- 单独开启并定制代码行数插件 ----------
+          # ========================================
+          # 1. 代码行数与历史趋势 (折线图+柱状图)
+          # ========================================
           plugin_lines: yes
-          # 这里有三个板块可以选择展示：
-          # base: 只显示一个简单的增加/删除行数小条
-          # repositories: 显示你在哪些仓库里写了最多代码的柱状图
-          # history: 显示你按时间维度的代码增减历史折线图
-          # （你可以根据喜好自由删减下面这三个词）
           plugin_lines_sections: base, repositories, history
           
-          # 为了防止和别的图表冲突，我们给这张图起个专属的名字
-          filename: lines-of-code.svg
+          # ========================================
+          # 2. 编程语言统计 (环形图/进度条)
+          # ========================================
+          plugin_languages: yes
+          # 显示各个语言的实际大小(bytes)和百分比
+          plugin_languages_details: bytes-size, percentage
+          # 最多展示 8 种你最常用的语言
+          plugin_languages_limit: 8
+          
+          # ========================================
+          # 3. 编程习惯与活跃时间 (打卡热力图)
+          # ========================================
+          plugin_habits: yes
+          plugin_habits_charts: yes # 开启图表
+          plugin_habits_facts: yes  # 开启有趣的总结（比如“你是夜猫子”）
+          plugin_habits_days: 14    # 统计最近 14 天的精细习惯
+          
+          # 重新命个名
+          filename: rich-statistics.svg
