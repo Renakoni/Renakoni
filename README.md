@@ -1,1 +1,1 @@
-![Metrics](github-metrics.svg)
+![Lines of Code](lines-of-code.svg)
