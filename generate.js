@@ -5,20 +5,20 @@ const USERNAME = 'Renakoni';
 const TOKEN = process.env.METRICS_TOKEN;
 
 async function generateDailySVG() {
-    console.log("🚀 开始拉取最近 14 天的【每日】代码数据...");
+    console.log("🚀 开始拉取最近 7 天的【每日】代码数据...");
     
-    const DAYS = 14; // 统计最近 14 天
+    const DAYS = 7; // Last 7 days
     const dailyData = [];
     const now = new Date();
     
-    // 1. 初始化过去 14 天的数据面板
+    // 1. 初始化过去 7 天的数据面板
     for (let i = DAYS - 1; i >= 0; i--) {
         const d = new Date(now.getTime() - i * 24 * 60 * 60 * 1000);
         const dateStr = `${d.getMonth() + 1}/${d.getDate()}`;
         dailyData.push({ dateStr: dateStr, a: 0, d: 0 });
     }
 
-    // 计算 14 天前的时间戳
+    // 计算 7 天前的时间戳
     const sinceDate = new Date(now.getTime() - DAYS * 24 * 60 * 60 * 1000).toISOString();
 
     // 2. 获取所有公开仓库
@@ -27,10 +27,10 @@ async function generateDailySVG() {
     });
     const repos = await reposRes.json();
 
-    // 3. 遍历仓库，抓取最近 14 天的具体 Commit
+    // 3. 遍历仓库，抓取最近 7 天的具体 Commit
     for (const repo of repos) {
         console.log(`正在检查仓库: ${repo.name}`);
-        // 查找属于你并且在 14 天内的提交
+        // 查找属于你并且在 7 天内的提交
         const commitsRes = await fetch(`https://api.github.com/repos/${USERNAME}/${repo.name}/commits?author=${USERNAME}&since=${sinceDate}&per_page=100`, {
             headers: { 'Authorization': `Bearer ${TOKEN}` }
         });
@@ -38,7 +38,7 @@ async function generateDailySVG() {
         if (commitsRes.status === 200) {
             const commits = await commitsRes.json();
             
-            // 遍历这 14 天内的每一个 Commit，去查它具体增删了多少行
+            // 遍历这 7 天内的每一个 Commit，去查它具体增删了多少行
             for (const c of commits) {
                 const detailRes = await fetch(`https://api.github.com/repos/${USERNAME}/${repo.name}/commits/${c.sha}`, {
                     headers: { 'Authorization': `Bearer ${TOKEN}` }
@@ -115,7 +115,7 @@ async function generateDailySVG() {
         <rect width="100%" height="100%" fill="#0d1117" rx="10" stroke="#30363d" stroke-width="2"/>
         
         <text x="25" y="40" class="text title">🚀 每日代码工作量 (Daily Workload)</text>
-        <text x="25" y="60" class="text subtitle">最近 14 天的实际代码增删行数</text>
+        <text x="25" y="60" class="text subtitle">Actual additions and deletions in the last 7 days</text>
         
         <line x1="25" y1="${centerY}" x2="615" y2="${centerY}" class="axis" stroke-dasharray="4" />
         
