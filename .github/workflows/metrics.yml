@@ -1,0 +1,25 @@
+name: Metrics
+on:
+  # 设置每天凌晨 0 点自动更新一次数据
+  schedule: [{cron: "0 0 * * *"}]
+  # 允许你在页面上手动点击立刻更新
+  workflow_dispatch:
+
+jobs:
+  github-metrics:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 允许脚本将生成的图片写回你的仓库
+    steps:
+      - uses: lowlighter/metrics@latest
+        with:
+          # 读取你刚才存好的 Token
+          token: ${{ secrets.METRICS_TOKEN }}
+          
+          # ---------- 核心显示配置 ----------
+          template: classic
+          # 基础信息模块：展示头部、活动、社区和仓库信息
+          base: header, activity, community, repositories
+          
+          # ---------- 开启代码行数插件 ----------
+          plugin_lines: yes
