@@ -105,7 +105,6 @@ async function generateDailySVG() {
         <style>
             .text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
             .title { font-weight: bold; font-size: 18px; fill: #c9d1d9; }
-            .subtitle { font-size: 12px; fill: #8b949e; }
             .label { font-size: 10px; fill: #8b949e; }
             .axis { stroke: #30363d; stroke-width: 1; }
             .stat { font-size: 10px; font-weight: bold; }
@@ -114,8 +113,7 @@ async function generateDailySVG() {
         </style>
         <rect width="100%" height="100%" fill="#0d1117" rx="10" stroke="#30363d" stroke-width="2"/>
         
-        <text x="25" y="40" class="text title">🚀 每日代码工作量 (Daily Workload)</text>
-        <text x="25" y="60" class="text subtitle">Actual additions and deletions in the last 7 days</text>
+        <text x="25" y="40" class="text title">7日代码工作量</text>
         
         <line x1="25" y1="${centerY}" x2="615" y2="${centerY}" class="axis" stroke-dasharray="4" />
         
