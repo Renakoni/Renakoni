@@ -25,6 +25,11 @@ function dayLabelFromKey(key) {
     return `${Number(month)}/${Number(day)}`;
 }
 
+function formatStat(value) {
+    if (value >= 1000) return `${(value / 1000).toFixed(1)}k`;
+    return String(value);
+}
+
 async function fetchJson(url) {
     const res = await fetch(url, { headers });
     if (!res.ok) {
@@ -100,13 +105,13 @@ async function generateDailySVG() {
     console.log('Stats:', dailyData.map((d) => `${d.dateStr}: +${d.a}/-${d.d}`).join(', '));
 
     const maxVal = Math.max(...dailyData.map((d) => Math.max(d.a, d.d)), 10);
-    const chartHeight = 100;
+    const chartHeight = 86;
     let barsSvg = '';
 
     const barWidth = 38;
     const spacing = 32;
     const startX = 60;
-    const centerY = 160;
+    const centerY = 176;
 
     dailyData.forEach((day, index) => {
         const x = startX + index * (barWidth + spacing);
@@ -119,10 +124,10 @@ async function generateDailySVG() {
         barsSvg += `<text x="${x + barWidth / 2}" y="${centerY + chartHeight + 25}" class="text label" text-anchor="middle">${day.dateStr}</text>`;
 
         if (day.a > 0) {
-            barsSvg += `<text x="${x + barWidth / 2}" y="${centerY - addHeight - 8}" class="text stat add" text-anchor="middle">+${day.a}</text>`;
+            barsSvg += `<text x="${x + barWidth / 2}" y="${centerY - addHeight - 8}" class="text stat add" text-anchor="middle">+${formatStat(day.a)}</text>`;
         }
         if (day.d > 0) {
-            barsSvg += `<text x="${x + barWidth / 2}" y="${centerY + delHeight + 16}" class="text stat del" text-anchor="middle">-${day.d}</text>`;
+            barsSvg += `<text x="${x + barWidth / 2}" y="${centerY + delHeight + 16}" class="text stat del" text-anchor="middle">-${formatStat(day.d)}</text>`;
         }
     });
 
@@ -130,16 +135,20 @@ async function generateDailySVG() {
     <svg width="640" height="320" xmlns="http://www.w3.org/2000/svg">
         <style>
             .text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-            .title { font-weight: bold; font-size: 18px; fill: #c9d1d9; }
+            .title { font-weight: 650; font-size: 17px; fill: #e6edf3; }
+            .legend { font-size: 11px; fill: #8b949e; }
             .label { font-size: 10px; fill: #8b949e; }
             .axis { stroke: #30363d; stroke-width: 1; }
-            .stat { font-size: 10px; font-weight: bold; }
+            .stat { font-size: 10px; font-weight: 650; }
             .add { fill: #3fb950; }
             .del { fill: #f85149; }
         </style>
-        <rect width="100%" height="100%" fill="#0d1117" rx="10" stroke="#30363d" stroke-width="2"/>
+        <rect width="100%" height="100%" fill="#0d1117" rx="8" stroke="#30363d" stroke-width="1"/>
+        <rect x="1" y="1" width="638" height="62" fill="#111820" rx="8"/>
 
-        <text x="25" y="40" class="text title">7日代码工作量</text>
+        <text x="25" y="39" class="text title">7-Day Code Activity</text>
+        <text x="486" y="39" class="text legend">+ additions</text>
+        <text x="568" y="39" class="text legend">- deletions</text>
         <line x1="25" y1="${centerY}" x2="615" y2="${centerY}" class="axis" stroke-dasharray="4" />
 
         ${barsSvg}
