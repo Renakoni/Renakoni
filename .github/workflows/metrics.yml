@@ -2,7 +2,8 @@ name: Daily Workload Tracker
 
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "35 23 * * *"
+      timezone: "Asia/Shanghai"
   workflow_dispatch:
 
 jobs:
