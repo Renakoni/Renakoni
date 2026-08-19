@@ -20,14 +20,18 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Generate contribution games
+      - name: Generate authenticated contribution games
+        uses: abozanona/pacman-contribution-graph@7332e1de7903ab780c3692a4127a59cc13872daa
+        with:
+          github_user_name: Renakoni
+          github_token: ${{ secrets.METRICS_TOKEN }}
+          games: breakout
+
+      - name: Style contribution games
         run: |
-          mkdir -p .arcade-build
-          npx --yes pacman-contribution-graph@5.3.1 --game breakout --username Renakoni --platform github --gameTheme github --output .arcade-build/breakout.svg
-          npx --yes pacman-contribution-graph@5.3.1 --game breakout --username Renakoni --platform github --gameTheme github-dark --output .arcade-build/breakout-dark.svg
-          node style-arcade.js light .arcade-build/breakout.svg assets/arcade-light.svg
-          node style-arcade.js dark .arcade-build/breakout-dark.svg assets/arcade-dark.svg
-          rm -r .arcade-build
+          node style-arcade.js light dist/breakout-contribution-graph.svg assets/arcade-light.svg
+          node style-arcade.js dark dist/breakout-contribution-graph-dark.svg assets/arcade-dark.svg
+          rm -r dist
 
       - name: Commit SVGs
         run: |
