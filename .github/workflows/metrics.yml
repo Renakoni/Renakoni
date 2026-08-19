@@ -1,4 +1,4 @@
-name: Daily Workload Tracker
+name: Lab Telemetry
 
 on:
   schedule:
@@ -18,9 +18,9 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20'
 
-      - name: Run DIY script
+      - name: Generate telemetry
         env:
           METRICS_TOKEN: ${{ secrets.METRICS_TOKEN }}
         run: node generate.js
@@ -29,6 +29,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add workload-chart.svg
-          git commit -m "chore: update daily workload chart [skip ci]" || echo "No changes to commit"
+          git add lab-telemetry.svg
+          git commit -m "chore: update lab telemetry [skip ci]" || echo "No changes to commit"
           git push
