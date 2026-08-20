@@ -4,6 +4,7 @@ const USERNAME = 'Renakoni';
 const TOKEN = process.env.METRICS_TOKEN;
 const DAYS = 7;
 const TZ_OFFSET_HOURS = 8;
+const IGNORED_LANGUAGES = new Set(['Jupyter Notebook']);
 
 const headers = {
     Accept: 'application/vnd.github+json',
@@ -84,7 +85,7 @@ function smoothPath(points) {
 
 function languageMark(name) {
     const marks = {
-        Python: 'PY', TypeScript: 'TS', 'Jupyter Notebook': 'NB', JavaScript: 'JS',
+        Python: 'PY', TypeScript: 'TS', JavaScript: 'JS',
         CSS: 'CSS', Dart: 'DART', Vue: 'VUE', Java: 'JAVA', Svelte: 'SV', Other: '+',
     };
     return marks[name] || name.slice(0, 3).toUpperCase();
@@ -199,8 +200,12 @@ async function generateTelemetry() {
 
     for (const repo of repos) {
         console.log(`Checking ${repo.full_name}${repo.private ? ' (private)' : ''}`);
-        const languages = await fetchJson(`https://api.github.com/repos/${repo.full_name}/languages`);
-        for (const [name, bytes] of Object.entries(languages)) languageTotals.set(name, (languageTotals.get(name) || 0) + bytes);
+        if (!repo.fork) {
+            const languages = await fetchJson(`https://api.github.com/repos/${repo.full_name}/languages`);
+            for (const [name, bytes] of Object.entries(languages)) {
+                if (!IGNORED_LANGUAGES.has(name)) languageTotals.set(name, (languageTotals.get(name) || 0) + bytes);
+            }
+        }
         const commits = await fetchAllPages(`https://api.github.com/repos/${repo.full_name}/commits?author=${encodeURIComponent(USERNAME)}&since=${encodeURIComponent(since)}`);
         for (const commit of commits) {
             const detail = await fetchJson(`https://api.github.com/repos/${repo.full_name}/commits/${commit.sha}`);
