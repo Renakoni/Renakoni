@@ -15,71 +15,71 @@
   <rect x="1" y="1" width="1164" height="468" rx="18" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
   <rect x="1" y="1" width="1164" height="468" rx="18" fill="url(#grid)"/>
   <rect x="22" y="20" width="8" height="8" rx="2" fill="var(--violet)"/><text x="42" y="30" class="ui" font-size="15" font-weight="750" fill="var(--ink)">LAB TELEMETRY</text>
-  <text x="1142" y="30" text-anchor="end" class="mono" font-size="10" font-weight="700" fill="var(--muted)"><tspan fill="var(--mint)">+127.8k</tspan><tspan> / </tspan><tspan fill="var(--coral)">-30.3k</tspan><tspan> / UTC+8</tspan></text><path d="M22 48h1122" stroke="var(--line)"/>
+  <text x="1142" y="30" text-anchor="end" class="mono" font-size="10" font-weight="700" fill="var(--muted)"><tspan fill="var(--mint)">+63.3k</tspan><tspan> / </tspan><tspan fill="var(--coral)">-22.6k</tspan><tspan> / UTC+8</tspan></text><path d="M22 48h1122" stroke="var(--line)"/>
   <text x="32" y="77" class="mono" font-size="11" font-weight="750" fill="var(--muted)">7 DAY ENERGY TRACE</text>
-  <path d="M32 166h1102" stroke="var(--line)" stroke-dasharray="4 8"/><path d="M 58 166 L 58 78 C 87.2 80.2, 174.7 85.5, 233 91 C 291.3 96.5, 349.7 111.0, 408 111 C 466.3 111.0, 524.7 93.0, 583 91 C 641.3 89.0, 699.7 99.5, 758 99 C 816.3 98.5, 874.7 86.2, 933 88 C 991.3 89.8, 1078.8 106.3, 1108 110 L 1108 166 Z" fill="var(--mint)" opacity=".08"/><path d="M 58 166 L 58 223 C 87.2 223.3, 174.7 228.8, 233 225 C 291.3 221.2, 349.7 201.8, 408 200 C 466.3 198.2, 524.7 212.2, 583 214 C 641.3 215.8, 699.7 210.5, 758 211 C 816.3 211.5, 874.7 218.0, 933 217 C 991.3 216.0, 1078.8 207.0, 1108 205 L 1108 166 Z" fill="var(--coral)" opacity=".07"/>
-  <path d="M 58 78 C 87.2 80.2, 174.7 85.5, 233 91 C 291.3 96.5, 349.7 111.0, 408 111 C 466.3 111.0, 524.7 93.0, 583 91 C 641.3 89.0, 699.7 99.5, 758 99 C 816.3 98.5, 874.7 86.2, 933 88 C 991.3 89.8, 1078.8 106.3, 1108 110" class="trace" pathLength="1" stroke="var(--mint)" stroke-width="3"/><path d="M 58 223 C 87.2 223.3, 174.7 228.8, 233 225 C 291.3 221.2, 349.7 201.8, 408 200 C 466.3 198.2, 524.7 212.2, 583 214 C 641.3 215.8, 699.7 210.5, 758 211 C 816.3 211.5, 874.7 218.0, 933 217 C 991.3 216.0, 1078.8 207.0, 1108 205" class="trace" pathLength="1" stroke="var(--coral)" stroke-width="2" style="animation-delay:.12s"/>
+  <path d="M32 166h1102" stroke="var(--line)" stroke-dasharray="4 8"/><path d="M 58 166 L 58 81 C 87.2 84.8, 174.7 103.8, 233 104 C 291.3 104.2, 349.7 84.3, 408 82 C 466.3 79.7, 524.7 90.7, 583 90 C 641.3 89.3, 699.7 76.7, 758 78 C 816.3 79.3, 874.7 96.2, 933 98 C 991.3 99.8, 1078.8 90.5, 1108 89 L 1108 166 Z" fill="var(--mint)" opacity=".08"/><path d="M 58 166 L 58 233 C 87.2 228.2, 174.7 206.2, 233 204 C 291.3 201.8, 349.7 218.0, 408 220 C 466.3 222.0, 524.7 215.3, 583 216 C 641.3 216.7, 699.7 224.5, 758 224 C 816.3 223.5, 874.7 214.3, 933 213 C 991.3 211.7, 1078.8 215.5, 1108 216 L 1108 166 Z" fill="var(--coral)" opacity=".07"/>
+  <path d="M 58 81 C 87.2 84.8, 174.7 103.8, 233 104 C 291.3 104.2, 349.7 84.3, 408 82 C 466.3 79.7, 524.7 90.7, 583 90 C 641.3 89.3, 699.7 76.7, 758 78 C 816.3 79.3, 874.7 96.2, 933 98 C 991.3 99.8, 1078.8 90.5, 1108 89" class="trace" pathLength="1" stroke="var(--mint)" stroke-width="3"/><path d="M 58 233 C 87.2 228.2, 174.7 206.2, 233 204 C 291.3 201.8, 349.7 218.0, 408 220 C 466.3 222.0, 524.7 215.3, 583 216 C 641.3 216.7, 699.7 224.5, 758 224 C 816.3 223.5, 874.7 214.3, 933 213 C 991.3 211.7, 1078.8 215.5, 1108 216" class="trace" pathLength="1" stroke="var(--coral)" stroke-width="2" style="animation-delay:.12s"/>
   <g class="node" style="animation-delay:0.00s">
-          <rect x="53" y="73" width="10" height="10" rx="2" transform="rotate(45 58 78)" fill="var(--mint)"/>
-          <rect x="54" y="219" width="8" height="8" rx="2" transform="rotate(45 58 223)" fill="var(--coral)"/>
-          <text x="58" y="66" text-anchor="middle" class="mono value add">+71.4k</text>
-          <text x="58" y="242" text-anchor="middle" class="mono value del">-9.2k</text>
-          <text x="58" y="266" text-anchor="middle" class="mono date">8/14</text>
+          <rect x="53" y="76" width="10" height="10" rx="2" transform="rotate(45 58 81)" fill="var(--mint)"/>
+          <rect x="54" y="229" width="8" height="8" rx="2" transform="rotate(45 58 233)" fill="var(--coral)"/>
+          <text x="58" y="69" text-anchor="middle" class="mono value add">+14.5k</text>
+          <text x="58" y="250" text-anchor="middle" class="mono value del">-13.3k</text>
+          <text x="58" y="266" text-anchor="middle" class="mono date">8/15</text>
         </g><g class="node" style="animation-delay:0.08s">
-          <rect x="228" y="86" width="10" height="10" rx="2" transform="rotate(45 233 91)" fill="var(--mint)"/>
-          <rect x="229" y="221" width="8" height="8" rx="2" transform="rotate(45 233 225)" fill="var(--coral)"/>
-          <text x="233" y="79" text-anchor="middle" class="mono value add">+14.5k</text>
-          <text x="233" y="244" text-anchor="middle" class="mono value del">-13.3k</text>
-          <text x="233" y="266" text-anchor="middle" class="mono date">8/15</text>
+          <rect x="228" y="99" width="10" height="10" rx="2" transform="rotate(45 233 104)" fill="var(--mint)"/>
+          <rect x="229" y="200" width="8" height="8" rx="2" transform="rotate(45 233 204)" fill="var(--coral)"/>
+          <text x="233" y="92" text-anchor="middle" class="mono value add">+1.1k</text>
+          <text x="233" y="223" text-anchor="middle" class="mono value del">-232</text>
+          <text x="233" y="266" text-anchor="middle" class="mono date">8/16</text>
         </g><g class="node" style="animation-delay:0.16s">
-          <rect x="403" y="106" width="10" height="10" rx="2" transform="rotate(45 408 111)" fill="var(--mint)"/>
-          <rect x="404" y="196" width="8" height="8" rx="2" transform="rotate(45 408 200)" fill="var(--coral)"/>
-          <text x="408" y="99" text-anchor="middle" class="mono value add">+1.1k</text>
-          <text x="408" y="219" text-anchor="middle" class="mono value del">-232</text>
-          <text x="408" y="266" text-anchor="middle" class="mono date">8/16</text>
+          <rect x="403" y="77" width="10" height="10" rx="2" transform="rotate(45 408 82)" fill="var(--mint)"/>
+          <rect x="404" y="216" width="8" height="8" rx="2" transform="rotate(45 408 220)" fill="var(--coral)"/>
+          <text x="408" y="70" text-anchor="middle" class="mono value add">+13.8k</text>
+          <text x="408" y="239" text-anchor="middle" class="mono value del">-2.3k</text>
+          <text x="408" y="266" text-anchor="middle" class="mono date">8/17</text>
         </g><g class="node" style="animation-delay:0.24s">
-          <rect x="578" y="86" width="10" height="10" rx="2" transform="rotate(45 583 91)" fill="var(--mint)"/>
-          <rect x="579" y="210" width="8" height="8" rx="2" transform="rotate(45 583 214)" fill="var(--coral)"/>
-          <text x="583" y="79" text-anchor="middle" class="mono value add">+13.8k</text>
-          <text x="583" y="233" text-anchor="middle" class="mono value del">-2.3k</text>
-          <text x="583" y="266" text-anchor="middle" class="mono date">8/17</text>
+          <rect x="578" y="85" width="10" height="10" rx="2" transform="rotate(45 583 90)" fill="var(--mint)"/>
+          <rect x="579" y="212" width="8" height="8" rx="2" transform="rotate(45 583 216)" fill="var(--coral)"/>
+          <text x="583" y="78" text-anchor="middle" class="mono value add">+5.2k</text>
+          <text x="583" y="235" text-anchor="middle" class="mono value del">-1.2k</text>
+          <text x="583" y="266" text-anchor="middle" class="mono date">8/18</text>
         </g><g class="node" style="animation-delay:0.32s">
-          <rect x="753" y="94" width="10" height="10" rx="2" transform="rotate(45 758 99)" fill="var(--mint)"/>
-          <rect x="754" y="207" width="8" height="8" rx="2" transform="rotate(45 758 211)" fill="var(--coral)"/>
-          <text x="758" y="87" text-anchor="middle" class="mono value add">+5.2k</text>
-          <text x="758" y="230" text-anchor="middle" class="mono value del">-1.2k</text>
-          <text x="758" y="266" text-anchor="middle" class="mono date">8/18</text>
+          <rect x="753" y="73" width="10" height="10" rx="2" transform="rotate(45 758 78)" fill="var(--mint)"/>
+          <rect x="754" y="220" width="8" height="8" rx="2" transform="rotate(45 758 224)" fill="var(--coral)"/>
+          <text x="758" y="66" text-anchor="middle" class="mono value add">+20.5k</text>
+          <text x="758" y="243" text-anchor="middle" class="mono value del">-3.5k</text>
+          <text x="758" y="266" text-anchor="middle" class="mono date">8/19</text>
         </g><g class="node" style="animation-delay:0.40s">
-          <rect x="928" y="83" width="10" height="10" rx="2" transform="rotate(45 933 88)" fill="var(--mint)"/>
-          <rect x="929" y="213" width="8" height="8" rx="2" transform="rotate(45 933 217)" fill="var(--coral)"/>
-          <text x="933" y="76" text-anchor="middle" class="mono value add">+20.5k</text>
-          <text x="933" y="236" text-anchor="middle" class="mono value del">-3.5k</text>
-          <text x="933" y="266" text-anchor="middle" class="mono date">8/19</text>
+          <rect x="928" y="93" width="10" height="10" rx="2" transform="rotate(45 933 98)" fill="var(--mint)"/>
+          <rect x="929" y="209" width="8" height="8" rx="2" transform="rotate(45 933 213)" fill="var(--coral)"/>
+          <text x="933" y="86" text-anchor="middle" class="mono value add">+2.3k</text>
+          <text x="933" y="232" text-anchor="middle" class="mono value del">-737</text>
+          <text x="933" y="266" text-anchor="middle" class="mono date">8/20</text>
         </g><g class="node" style="animation-delay:0.48s">
-          <rect x="1103" y="105" width="10" height="10" rx="2" transform="rotate(45 1108 110)" fill="var(--mint)"/>
-          <rect x="1104" y="201" width="8" height="8" rx="2" transform="rotate(45 1108 205)" fill="var(--coral)"/>
-          <text x="1108" y="98" text-anchor="middle" class="mono value add">+1.3k</text>
-          <text x="1108" y="224" text-anchor="middle" class="mono value del">-545</text>
-          <text x="1108" y="266" text-anchor="middle" class="mono date">8/20</text>
+          <rect x="1103" y="84" width="10" height="10" rx="2" transform="rotate(45 1108 89)" fill="var(--mint)"/>
+          <rect x="1104" y="212" width="8" height="8" rx="2" transform="rotate(45 1108 216)" fill="var(--coral)"/>
+          <text x="1108" y="77" text-anchor="middle" class="mono value add">+5.9k</text>
+          <text x="1108" y="235" text-anchor="middle" class="mono value del">-1.3k</text>
+          <text x="1108" y="266" text-anchor="middle" class="mono date">8/21</text>
         </g><path d="M22 283h1122" stroke="var(--line)"/>
   <text x="32" y="313" class="mono" font-size="11" font-weight="750" fill="var(--muted)">LANGUAGE CONSTELLATION</text>
-  <text x="1134" y="313" text-anchor="end" class="mono" font-size="10" font-weight="650" fill="var(--muted)">22 SIGNALS / 12.4 MB INDEXED</text>
+  <text x="1134" y="313" text-anchor="end" class="mono" font-size="10" font-weight="650" fill="var(--muted)">22 SIGNALS / 12.5 MB INDEXED</text>
   <path id="route" d="M 84 366 L 228 393 L 372 350 L 516 391 L 660 352 L 804 390 L 948 354 L 1082 386" fill="none" stroke="var(--line)" stroke-width="1.5" stroke-dasharray="3 7"/>
   <g class="language" style="animation-delay:0.35s">
           <circle cx="84" cy="366" r="40" fill="var(--lang-1)" opacity="0.2"/>
           <circle cx="84" cy="366" r="34" fill="var(--panel)" stroke="var(--lang-1)" stroke-width="2"/>
           <text x="84" y="370" text-anchor="middle" class="mono mark" fill="var(--lang-1)">TS</text>
-          <text x="84" y="423" text-anchor="middle" class="ui language-label">TypeScript 47.8%</text>
+          <text x="84" y="423" text-anchor="middle" class="ui language-label">TypeScript 48.0%</text>
         </g><g class="language" style="animation-delay:0.42s">
           <circle cx="228" cy="393" r="30" fill="var(--lang-2)" opacity="0.2"/>
           <circle cx="228" cy="393" r="24" fill="var(--panel)" stroke="var(--lang-2)" stroke-width="2"/>
           <text x="228" y="397" text-anchor="middle" class="mono mark" fill="var(--lang-2)">PY</text>
-          <text x="228" y="440" text-anchor="middle" class="ui language-label">Python 16.3%</text>
+          <text x="228" y="440" text-anchor="middle" class="ui language-label">Python 16.1%</text>
         </g><g class="language" style="animation-delay:0.49s">
           <circle cx="372" cy="350" r="28" fill="var(--lang-3)" opacity="0.2"/>
           <circle cx="372" cy="350" r="22" fill="var(--panel)" stroke="var(--lang-3)" stroke-width="2"/>
           <text x="372" y="354" text-anchor="middle" class="mono mark" fill="var(--lang-3)">CSS</text>
-          <text x="372" y="395" text-anchor="middle" class="ui language-label">CSS 11.9%</text>
+          <text x="372" y="395" text-anchor="middle" class="ui language-label">CSS 11.8%</text>
         </g><g class="language" style="animation-delay:0.56s">
           <circle cx="516" cy="391" r="25" fill="var(--lang-4)" opacity="0.2"/>
           <circle cx="516" cy="391" r="19" fill="var(--panel)" stroke="var(--lang-4)" stroke-width="2"/>
@@ -89,17 +89,17 @@
           <circle cx="660" cy="352" r="25" fill="var(--lang-5)" opacity="0.2"/>
           <circle cx="660" cy="352" r="19" fill="var(--panel)" stroke="var(--lang-5)" stroke-width="2"/>
           <text x="660" y="356" text-anchor="middle" class="mono mark" fill="var(--lang-5)">VUE</text>
-          <text x="660" y="394" text-anchor="middle" class="ui language-label">Vue 5.8%</text>
+          <text x="660" y="394" text-anchor="middle" class="ui language-label">Vue 5.7%</text>
         </g><g class="language" style="animation-delay:0.70s">
           <circle cx="804" cy="390" r="24" fill="var(--lang-6)" opacity="0.2"/>
           <circle cx="804" cy="390" r="18" fill="var(--panel)" stroke="var(--lang-6)" stroke-width="2"/>
           <text x="804" y="394" text-anchor="middle" class="mono mark" fill="var(--lang-6)">JAVA</text>
           <text x="804" y="431" text-anchor="middle" class="ui language-label">Java 5.0%</text>
         </g><g class="language" style="animation-delay:0.77s">
-          <circle cx="948" cy="354" r="22" fill="var(--lang-7)" opacity="0.2"/>
-          <circle cx="948" cy="354" r="16" fill="var(--panel)" stroke="var(--lang-7)" stroke-width="2"/>
+          <circle cx="948" cy="354" r="23" fill="var(--lang-7)" opacity="0.2"/>
+          <circle cx="948" cy="354" r="17" fill="var(--panel)" stroke="var(--lang-7)" stroke-width="2"/>
           <text x="948" y="358" text-anchor="middle" class="mono mark" fill="var(--lang-7)">JS</text>
-          <text x="948" y="393" text-anchor="middle" class="ui language-label">JavaScript 2.7%</text>
+          <text x="948" y="394" text-anchor="middle" class="ui language-label">JavaScript 2.9%</text>
         </g><g class="language" style="animation-delay:0.84s">
           <circle cx="1082" cy="386" r="24" fill="var(--lang-8)" opacity="0.2"/>
           <circle cx="1082" cy="386" r="18" fill="var(--panel)" stroke="var(--lang-8)" stroke-width="2"/>
