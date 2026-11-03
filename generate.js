@@ -49,6 +49,10 @@ async function fetchJson(url) {
     const response = await fetch(url, { headers });
     if (!response.ok) {
         const body = await response.text();
+        if (response.status === 409 && new URL(url).pathname.endsWith('/commits') && body.includes('Git Repository is empty.')) {
+            console.log(`Skipping empty repository: ${new URL(url).pathname.split('/').slice(2, 4).join('/')}`);
+            return [];
+        }
         throw new Error(`GitHub API ${response.status} for ${url}: ${body.slice(0, 300)}`);
     }
     return response.json();
