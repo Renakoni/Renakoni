@@ -15,52 +15,52 @@
   <rect x="1" y="1" width="1164" height="468" rx="18" fill="var(--panel)" stroke="var(--line)" stroke-width="2"/>
   <rect x="1" y="1" width="1164" height="468" rx="18" fill="url(#grid)"/>
   <rect x="22" y="20" width="8" height="8" rx="2" fill="var(--violet)"/><text x="42" y="30" class="ui" font-size="15" font-weight="750" fill="var(--ink)">LAB TELEMETRY</text>
-  <text x="1142" y="30" text-anchor="end" class="mono" font-size="10" font-weight="700" fill="var(--muted)"><tspan fill="var(--mint)">+18.3k</tspan><tspan> / </tspan><tspan fill="var(--coral)">-13.5k</tspan><tspan> / UTC+8</tspan></text><path d="M22 48h1122" stroke="var(--line)"/>
+  <text x="1142" y="30" text-anchor="end" class="mono" font-size="10" font-weight="700" fill="var(--muted)"><tspan fill="var(--mint)">+17.8k</tspan><tspan> / </tspan><tspan fill="var(--coral)">-12.6k</tspan><tspan> / UTC+8</tspan></text><path d="M22 48h1122" stroke="var(--line)"/>
   <text x="32" y="77" class="mono" font-size="11" font-weight="750" fill="var(--muted)">7 DAY ENERGY TRACE</text>
-  <path d="M32 166h1102" stroke="var(--line)" stroke-dasharray="4 8"/><path d="M 58 166 L 58 99 C 87.2 97.0, 174.7 88.7, 233 87 C 291.3 85.3, 349.7 88.8, 408 89 C 466.3 89.2, 524.7 89.8, 583 88 C 641.3 86.2, 699.7 77.3, 758 78 C 816.3 78.7, 874.7 89.3, 933 92 C 991.3 94.7, 1078.8 93.7, 1108 94 L 1108 166 Z" fill="var(--mint)" opacity=".08"/><path d="M 58 166 L 58 221 C 87.2 222.3, 174.7 229.7, 233 229 C 291.3 228.3, 349.7 216.5, 408 217 C 466.3 217.5, 524.7 230.5, 583 232 C 641.3 233.5, 699.7 227.8, 758 226 C 816.3 224.2, 874.7 221.2, 933 221 C 991.3 220.8, 1078.8 224.3, 1108 225 L 1108 166 Z" fill="var(--coral)" opacity=".07"/>
-  <path d="M 58 99 C 87.2 97.0, 174.7 88.7, 233 87 C 291.3 85.3, 349.7 88.8, 408 89 C 466.3 89.2, 524.7 89.8, 583 88 C 641.3 86.2, 699.7 77.3, 758 78 C 816.3 78.7, 874.7 89.3, 933 92 C 991.3 94.7, 1078.8 93.7, 1108 94" class="trace" pathLength="1" stroke="var(--mint)" stroke-width="3"/><path d="M 58 221 C 87.2 222.3, 174.7 229.7, 233 229 C 291.3 228.3, 349.7 216.5, 408 217 C 466.3 217.5, 524.7 230.5, 583 232 C 641.3 233.5, 699.7 227.8, 758 226 C 816.3 224.2, 874.7 221.2, 933 221 C 991.3 220.8, 1078.8 224.3, 1108 225" class="trace" pathLength="1" stroke="var(--coral)" stroke-width="2" style="animation-delay:.12s"/>
+  <path d="M32 166h1102" stroke="var(--line)" stroke-dasharray="4 8"/><path d="M 58 166 L 58 87 C 87.2 87.3, 174.7 88.8, 233 89 C 291.3 89.2, 349.7 89.8, 408 88 C 466.3 86.2, 524.7 77.3, 583 78 C 641.3 78.7, 699.7 89.7, 758 92 C 816.3 94.3, 874.7 79.7, 933 92 C 991.3 104.3, 1078.8 153.7, 1108 166 L 1108 166 Z" fill="var(--mint)" opacity=".08"/><path d="M 58 166 L 58 229 C 87.2 227.0, 174.7 216.5, 233 217 C 291.3 217.5, 349.7 230.5, 408 232 C 466.3 233.5, 524.7 227.8, 583 226 C 641.3 224.2, 699.7 221.0, 758 221 C 816.3 221.0, 874.7 235.2, 933 226 C 991.3 216.8, 1078.8 176.0, 1108 166 L 1108 166 Z" fill="var(--coral)" opacity=".07"/>
+  <path d="M 58 87 C 87.2 87.3, 174.7 88.8, 233 89 C 291.3 89.2, 349.7 89.8, 408 88 C 466.3 86.2, 524.7 77.3, 583 78 C 641.3 78.7, 699.7 89.7, 758 92 C 816.3 94.3, 874.7 79.7, 933 92 C 991.3 104.3, 1078.8 153.7, 1108 166" class="trace" pathLength="1" stroke="var(--mint)" stroke-width="3"/><path d="M 58 229 C 87.2 227.0, 174.7 216.5, 233 217 C 291.3 217.5, 349.7 230.5, 408 232 C 466.3 233.5, 524.7 227.8, 583 226 C 641.3 224.2, 699.7 221.0, 758 221 C 816.3 221.0, 874.7 235.2, 933 226 C 991.3 216.8, 1078.8 176.0, 1108 166" class="trace" pathLength="1" stroke="var(--coral)" stroke-width="2" style="animation-delay:.12s"/>
   <g class="node" style="animation-delay:0.00s">
-          <rect x="53" y="94" width="10" height="10" rx="2" transform="rotate(45 58 99)" fill="var(--mint)"/>
-          <rect x="54" y="217" width="8" height="8" rx="2" transform="rotate(45 58 221)" fill="var(--coral)"/>
-          <text x="58" y="87" text-anchor="middle" class="mono value add">+791</text>
-          <text x="58" y="240" text-anchor="middle" class="mono value del">-980</text>
-          <text x="58" y="266" text-anchor="middle" class="mono date">11/7</text>
+          <rect x="53" y="82" width="10" height="10" rx="2" transform="rotate(45 58 87)" fill="var(--mint)"/>
+          <rect x="54" y="225" width="8" height="8" rx="2" transform="rotate(45 58 229)" fill="var(--coral)"/>
+          <text x="58" y="75" text-anchor="middle" class="mono value add">+2.7k</text>
+          <text x="58" y="248" text-anchor="middle" class="mono value del">-2.9k</text>
+          <text x="58" y="266" text-anchor="middle" class="mono date">11/8</text>
         </g><g class="node" style="animation-delay:0.08s">
-          <rect x="228" y="82" width="10" height="10" rx="2" transform="rotate(45 233 87)" fill="var(--mint)"/>
-          <rect x="229" y="225" width="8" height="8" rx="2" transform="rotate(45 233 229)" fill="var(--coral)"/>
-          <text x="233" y="75" text-anchor="middle" class="mono value add">+2.7k</text>
-          <text x="233" y="248" text-anchor="middle" class="mono value del">-2.9k</text>
-          <text x="233" y="266" text-anchor="middle" class="mono date">11/8</text>
+          <rect x="228" y="84" width="10" height="10" rx="2" transform="rotate(45 233 89)" fill="var(--mint)"/>
+          <rect x="229" y="213" width="8" height="8" rx="2" transform="rotate(45 233 217)" fill="var(--coral)"/>
+          <text x="233" y="77" text-anchor="middle" class="mono value add">+2.3k</text>
+          <text x="233" y="236" text-anchor="middle" class="mono value del">-623</text>
+          <text x="233" y="266" text-anchor="middle" class="mono date">11/9</text>
         </g><g class="node" style="animation-delay:0.16s">
-          <rect x="403" y="84" width="10" height="10" rx="2" transform="rotate(45 408 89)" fill="var(--mint)"/>
-          <rect x="404" y="213" width="8" height="8" rx="2" transform="rotate(45 408 217)" fill="var(--coral)"/>
-          <text x="408" y="77" text-anchor="middle" class="mono value add">+2.3k</text>
-          <text x="408" y="236" text-anchor="middle" class="mono value del">-623</text>
-          <text x="408" y="266" text-anchor="middle" class="mono date">11/9</text>
+          <rect x="403" y="83" width="10" height="10" rx="2" transform="rotate(45 408 88)" fill="var(--mint)"/>
+          <rect x="404" y="228" width="8" height="8" rx="2" transform="rotate(45 408 232)" fill="var(--coral)"/>
+          <text x="408" y="76" text-anchor="middle" class="mono value add">+2.6k</text>
+          <text x="408" y="250" text-anchor="middle" class="mono value del">-4.3k</text>
+          <text x="408" y="266" text-anchor="middle" class="mono date">11/10</text>
         </g><g class="node" style="animation-delay:0.24s">
-          <rect x="578" y="83" width="10" height="10" rx="2" transform="rotate(45 583 88)" fill="var(--mint)"/>
-          <rect x="579" y="228" width="8" height="8" rx="2" transform="rotate(45 583 232)" fill="var(--coral)"/>
-          <text x="583" y="76" text-anchor="middle" class="mono value add">+2.6k</text>
-          <text x="583" y="250" text-anchor="middle" class="mono value del">-4.3k</text>
-          <text x="583" y="266" text-anchor="middle" class="mono date">11/10</text>
+          <rect x="578" y="73" width="10" height="10" rx="2" transform="rotate(45 583 78)" fill="var(--mint)"/>
+          <rect x="579" y="222" width="8" height="8" rx="2" transform="rotate(45 583 226)" fill="var(--coral)"/>
+          <text x="583" y="66" text-anchor="middle" class="mono value add">+6.8k</text>
+          <text x="583" y="245" text-anchor="middle" class="mono value del">-1.9k</text>
+          <text x="583" y="266" text-anchor="middle" class="mono date">11/11</text>
         </g><g class="node" style="animation-delay:0.32s">
-          <rect x="753" y="73" width="10" height="10" rx="2" transform="rotate(45 758 78)" fill="var(--mint)"/>
-          <rect x="754" y="222" width="8" height="8" rx="2" transform="rotate(45 758 226)" fill="var(--coral)"/>
-          <text x="758" y="66" text-anchor="middle" class="mono value add">+6.8k</text>
-          <text x="758" y="245" text-anchor="middle" class="mono value del">-1.9k</text>
-          <text x="758" y="266" text-anchor="middle" class="mono date">11/11</text>
+          <rect x="753" y="87" width="10" height="10" rx="2" transform="rotate(45 758 92)" fill="var(--mint)"/>
+          <rect x="754" y="217" width="8" height="8" rx="2" transform="rotate(45 758 221)" fill="var(--coral)"/>
+          <text x="758" y="80" text-anchor="middle" class="mono value add">+1.6k</text>
+          <text x="758" y="240" text-anchor="middle" class="mono value del">-1.0k</text>
+          <text x="758" y="266" text-anchor="middle" class="mono date">11/12</text>
         </g><g class="node" style="animation-delay:0.40s">
           <rect x="928" y="87" width="10" height="10" rx="2" transform="rotate(45 933 92)" fill="var(--mint)"/>
-          <rect x="929" y="217" width="8" height="8" rx="2" transform="rotate(45 933 221)" fill="var(--coral)"/>
-          <text x="933" y="80" text-anchor="middle" class="mono value add">+1.6k</text>
-          <text x="933" y="240" text-anchor="middle" class="mono value del">-1.0k</text>
-          <text x="933" y="266" text-anchor="middle" class="mono date">11/12</text>
+          <rect x="929" y="222" width="8" height="8" rx="2" transform="rotate(45 933 226)" fill="var(--coral)"/>
+          <text x="933" y="80" text-anchor="middle" class="mono value add">+1.7k</text>
+          <text x="933" y="245" text-anchor="middle" class="mono value del">-1.9k</text>
+          <text x="933" y="266" text-anchor="middle" class="mono date">11/13</text>
         </g><g class="node" style="animation-delay:0.48s">
-          <rect x="1103" y="89" width="10" height="10" rx="2" transform="rotate(45 1108 94)" fill="var(--mint)"/>
-          <rect x="1104" y="221" width="8" height="8" rx="2" transform="rotate(45 1108 225)" fill="var(--coral)"/>
-          <text x="1108" y="82" text-anchor="middle" class="mono value add">+1.4k</text>
-          <text x="1108" y="244" text-anchor="middle" class="mono value del">-1.8k</text>
-          <text x="1108" y="266" text-anchor="middle" class="mono date">11/13</text>
+          <rect x="1103" y="161" width="10" height="10" rx="2" transform="rotate(45 1108 166)" fill="var(--mint)"/>
+          <rect x="1104" y="162" width="8" height="8" rx="2" transform="rotate(45 1108 166)" fill="var(--coral)"/>
+          <text x="1108" y="154" text-anchor="middle" class="mono value add">+0</text>
+          <text x="1108" y="185" text-anchor="middle" class="mono value del">-0</text>
+          <text x="1108" y="266" text-anchor="middle" class="mono date">11/14</text>
         </g><path d="M22 283h1122" stroke="var(--line)"/>
   <text x="32" y="313" class="mono" font-size="11" font-weight="750" fill="var(--muted)">LANGUAGE CONSTELLATION</text>
   <text x="1134" y="313" text-anchor="end" class="mono" font-size="10" font-weight="650" fill="var(--muted)">23 SIGNALS / 23.3 MB INDEXED</text>
